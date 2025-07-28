@@ -1,9 +1,9 @@
 # Etapa 1: build de la app
 FROM node:22-alpine AS build
 WORKDIR /app
-COPY anfis-page/package.json anfis-page/yarn.lock* anfis-page/package-lock.json* ./
+COPY package.json yarn.lock* package-lock.json* ./
 RUN npm install
-COPY anfis-page/ ./
+COPY . .
 RUN npm run build
 
 # Etapa 2: Nginx para servir archivos estáticos
