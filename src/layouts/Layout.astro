@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+<title>Anfis SRL - Desarrollo de Software</title>
+	<meta name="description" content="anfis SRL - Soluciones de software a medida, innovación y tecnología de vanguardia." />
+	</head>
+<body class="bg-white font-sans">
+  <header class="w-full h-20 bg-white/90 shadow-sm fixed top-0 left-0 z-50">
+	<div class="container mx-auto flex items-center justify-between py-3 px-4 h-20">
+	  <a href="/" class="flex items-center gap-2 h-full scale-150">
+		<img src="/logo-anfis.png" alt="anfis SRL logo" class="h-full object-cover" style="" />
+		<!-- <span class="text-[#0042a5] font-bold text-xl tracking-wide">anfis SRL</span> -->
+	  </a>
+	  <nav class="hidden md:flex gap-8 text-[#0042a5] font-semibold">
+		<a href="#servicios" class="hover:text-[#00d678] transition">Servicios</a>
+		<a href="#portafolio" class="hover:text-[#00d678] transition">Portafolio</a>
+		<a href="#equipo" class="hover:text-[#00d678] transition">Equipo</a>
+		<a href="#contacto" class="hover:text-[#00d678] transition">Contacto</a>
+	  </nav>
+	</div>
+  </header>
+  <main class="pt-20">
+	<slot />
+  </main>
+</body>
+</html>
+
+<style>
+
+</style>
